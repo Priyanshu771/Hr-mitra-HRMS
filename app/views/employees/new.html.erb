@@ -1,0 +1,91 @@
+<div class="col-lg-12">
+
+  <div class="card rounded-0 mt-5 mb-5">
+    <div class="card-body">
+      <h2 class="text-center">Create new Employees</h2>
+    </div>
+  </div>
+  <%= form_with model: @employees do |form| %>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+             <%= form.label :first_name, class: 'mb-2' %>
+             <%= form.text_field :first_name, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <%= form.label :middle_name, class: 'mb-2' %>
+          <%= form.text_field :middle_name, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <%= form.label :last_name, class: 'mb-2' %>
+          <%= form.text_field :last_name, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <%= form.label :personal_email, class: 'mb-2' %>
+          <%= form.text_field :email, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="form-group">
+          <%= form.label :address_line1, class: 'mb-2' %>
+          <%= form.text_field :address_line_1, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="form-group">
+          <%= form.label :address_line_2, class: 'mb-2' %>
+          <%= form.text_field :address_line_2, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <%= form.label :city, class: 'mb-2' %>
+          <%= form.text_field :city, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <%= form.label :state, class: 'mb-2' %>
+          <%= form.text_field :state, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <%= form.label :country, class: 'mb-2' %>
+          <%= form.text_field :country, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <%= form.label :pincode, class: 'mb-2' %>
+          <%= form.text_field :pincode, class: 'form-control form-control-lg rounded-0' %>
+        </div>
+      </div>
+    </div>
+<div class="row">
+  <div class="col-lg-12 mt-4 ">
+    <%= form.submit class: "btn btn-primary btn-lg  rounded-0" %>
+    <%= link_to "back to Employees", employees_path, class: "btn btn-outline-primary btn-lg rounded-0" %>
+  </div>
+</div>
+  <% end %>
+</div>
