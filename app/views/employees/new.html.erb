@@ -1,16 +1,16 @@
 <div class="col-lg-12">
-
   <div class="card rounded-0 mt-5 mb-5">
     <div class="card-body">
-      <h2 class="text-center">Create new Employees</h2>
+      <h2 class="text-center">Create new Employee</h2>
     </div>
   </div>
-  <%= form_with model: @employees do |form| %>
+
+  <%= form_with model: @employee do |form| %>
     <div class="row">
       <div class="col-lg-4">
         <div class="form-group">
-             <%= form.label :first_name, class: 'mb-2' %>
-             <%= form.text_field :first_name, class: 'form-control form-control-lg rounded-0' %>
+          <%= form.label :first_name, class: 'mb-2' %>
+          <%= form.text_field :first_name, class: 'form-control form-control-lg rounded-0' %>
         </div>
       </div>
 
@@ -33,7 +33,7 @@
       <div class="col-lg-4">
         <div class="form-group">
           <%= form.label :personal_email, class: 'mb-2' %>
-          <%= form.text_field :email, class: 'form-control form-control-lg rounded-0' %>
+          <%= form.text_field :personal_email, class: 'form-control form-control-lg rounded-0' %>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
       <div class="col-lg-6">
         <div class="form-group">
           <%= form.label :address_line1, class: 'mb-2' %>
-          <%= form.text_field :address_line_1, class: 'form-control form-control-lg rounded-0' %>
+          <%= form.text_field :address_line1, class: 'form-control form-control-lg rounded-0' %>
         </div>
       </div>
 
@@ -81,11 +81,12 @@
         </div>
       </div>
     </div>
-<div class="row">
-  <div class="col-lg-12 mt-4 ">
-    <%= form.submit class: "btn btn-primary btn-lg  rounded-0" %>
-    <%= link_to "back to Employees", employees_path, class: "btn btn-outline-primary btn-lg rounded-0" %>
-  </div>
-</div>
+
+    <div class="row">
+      <div class="col-lg-12 mt-4">
+        <%= form.submit class: "btn btn-primary btn-lg rounded-0" %>
+        <%= link_to "Back to Employees", employees_path, class: "btn btn-outline-primary btn-lg rounded-0" %>
+      </div>
+    </div>
   <% end %>
 </div>

@@ -52,3 +52,15 @@ employee = Employee.create(
   pincode: '459022',
   address_line1: 'kosai mohhalla',
   )
+
+employee = Employee.create(
+  first_name: 'rahul',
+  middle_name: 'Singh',
+  last_name: 'kumar',
+  personal_email: 'rahuliii@hr-mitra.com',
+  city: 'bihari',
+  state: 'mp',
+  country: 'India',
+  pincode: '459022',
+  address_line1: 'kosai mohhalla',
+  )
